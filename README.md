@@ -9,7 +9,7 @@ File path:MPDroid\Data
 # Prerequisites
 1.Import the MPDroid\AppRiskEvaluation\analyzedata.sql into your local MySQL.
 
-2.Change the database password in MPDroid\AppRiskEvaluation\Second_Step\common.py(sql_password='').
+2.Change the database password in MPDroid\AppRiskEvaluation\Second_Step\common.py(sql_password='').We need a password to connect to your database.
 
 3.Debug and install the Python libraries you need in your code
 # Run
