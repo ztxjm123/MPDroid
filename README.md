@@ -5,7 +5,8 @@ We train our model through benign apps and malignant apps, and then use our mode
 # data 
 The Data set that the code needs is in the data folder,malicious app,benign app,and training dataset.
 # Prerequisites
-1.Import the analyzedata.sql into your local MySQL.
-2.Change the database password in common.py.
+1.Import the MPDroid\AppRiskEvaluation\analyzedata.sql into your local MySQL.
+2.Change the database password in MPDroid\AppRiskEvaluation\Second_Step\common.py(sql_password='').
+3.Debug and install the Python libraries you need in your code
 # Run
-All the steps are in \第二步\main.py ,just run it.
+We call all the steps and functions in MPDroid\AppRiskEvaluation\Second_Step\main.py,so you just run it.
