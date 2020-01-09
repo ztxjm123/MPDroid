@@ -9,7 +9,6 @@ import common
 PERMISSIONS_LIST = json.load(open('permission.json'))
 NUM_PERMISSIONS = len(PERMISSIONS_LIST)
 
-#  设置第三步到第二步的过滤 0.1 0.2
 
 
 def main(limit):
@@ -17,7 +16,6 @@ def main(limit):
     Used to filter the permission data of step 2 in step 3
     :return:
     """
-    ## 1、读取两个文件，转 dict
     Benign_App_filtering_permission = toDict(open('Data_Origin/Merge-filter-permission-support/Merge_permission-benignApp.txt', 'r').readlines())
     Malicious_App_filtering_permission = toDict(open('Data_Origin/Merge-filter-permission-support/Merge_permission-maliciousApp.txt', 'r').readlines())
     Benign_training_App = open('Data_Origin/Merge-filter-permission-support/Nine_over_ten-benignApp.txt', 'r').readlines()
@@ -36,7 +34,6 @@ def main(limit):
                         if (index in permission.keys()) :
                             possibility = permission[index]
                             if possibility < limit:
-                                # 移除
                                 rawPermission_arr = rawPermission.split(';')
                                 for index, item in enumerate(rawPermission_arr):
                                     if (item.lower() == per.lower()):

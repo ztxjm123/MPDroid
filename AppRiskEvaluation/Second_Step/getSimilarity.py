@@ -135,8 +135,8 @@ if __name__ == '__main__':
     #     main(sys.argv[1], sys.argv[2], sys.argv[3])
     #     print sys.argv[2], "Finished!"
 
-    main('data/良性话题.mat', 'data/良性目标话题.mat', 'data/良性良性相似度.txt')
-    main('data/恶性话题.mat', 'data/良性目标话题.mat', 'data/恶性良性相似度.txt')
+    main('data/.mat', 'data/mat', 'data/.txt')
+    main('data/.mat', 'data/mat', 'data/.txt')
 
-    main('data/良性话题.mat', 'data/恶性目标话题.mat', 'data/良性恶性相似度.txt')
-    main('data/恶性话题.mat', 'data/恶性目标话题.mat', 'data/恶性恶性相似度.txt')
+    main('data/.mat', 'data/mat', 'data/.txt')
+    main('data/.mat', 'data/.mat', 'data/.txt')

@@ -85,11 +85,8 @@ if __name__ == '__main__':
     #     print 'PREFIX: train, test'
     # else:
     #     main(sys.argv[1], sys.argv[2])
-    # main('数据源/测试数据源/良性权限文件.txt.txt', '良性权限矩阵')
-    # main('数据源/测试数据源/恶性权限文件.txt', '恶性权限矩阵')
-    # main('数据源/测试数据源/目标权限文件.txt', '目标权限矩阵')
 
-    main('数据源/正式2/良性权限五分之四.txt', '良性权限矩阵')
-    main('数据源/正式2/恶性权限五分之四.txt', '恶性权限矩阵')
-    main('数据源/正式2/良性权限五分之一.txt', '良性目标权限矩阵')
-    main('数据源/正式2/恶性权限五分之一.txt', '恶性目标权限矩阵')
+    main('.txt', 'b')
+    main('.txt', 'm')
+    main('.txt', 'b')
+    main('.txt', 'm')

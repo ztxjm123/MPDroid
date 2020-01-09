@@ -64,12 +64,9 @@ if __name__ == '__main__':
     #     print 'PREFIX: train, test'
     # else:
     #     main(sys.argv[1], sys.argv[2])
-    # main('数据源/测试数据源/良性话题文件.txt', '良性话题')
-    # main('数据源/测试数据源/恶性话题文件.txt', '恶性话题')
-    # main('数据源/测试数据源/目标话题文件.txt', '目标话题')
 
 
-    main('数据源/正式2/良性话题五分之四.txt', '良性话题')
-    main('数据源/正式2/恶性话题五分之四.txt', '恶性话题')
-    main('数据源/正式2/良性话题五分之一.txt', '良性目标话题')
-    main('数据源/正式2/恶性话题五分之一.txt', '恶性目标话题')
+    main('.txt', 'b')
+    main('.txt', 'm')
+    main('.txt', 'b')
+    main('.txt', 'm')

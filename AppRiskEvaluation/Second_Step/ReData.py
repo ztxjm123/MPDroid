@@ -313,7 +313,7 @@ class common(object):
 
 
 if __name__ == '__main__':
-    # 话题数量， 100 80 60
+    # ， 100 80 60
     # TOPIC_NUM = 100
     # limit = 0.1
 

@@ -99,7 +99,7 @@ if __name__ == '__main__':
     topic_num_list = [65, 70, 75, 80, 85, 90, 95, 100]
     target_list = ['20-80']
     limit_list = [0.1]
-    plotMat(topic_num_list, '话题', topic_num_list, target_list, limit_list)
+    plotMat(topic_num_list, 'Topic', topic_num_list, target_list, limit_list)
 
     # topic_num_list = [100]
     # target_list = ['20-80']

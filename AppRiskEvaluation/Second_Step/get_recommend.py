@@ -30,7 +30,6 @@ def getkNNs(rank_list, limit):
     # upper = len(rank_list) if len(rank_list) < K else K
     # rank_list.append([])
     # list = []
-    # ## 换成： 小于阈值就排除
     # # rank_list.remove()
     # if (len(rank_list) > 0) :
     #     for i in rank_list:
@@ -102,9 +101,8 @@ if __name__ == '__main__':
     #     end = time.clock()
     #     print (end - start)
 
-    ## 良性推荐过滤0.6， 恶性0.4
-    main('data/良性权限矩阵.mat', 'data/良性良性相似度.txt', 'data/良性目标良性推荐.txt', 0.6)
-    main('data/恶性权限矩阵.mat', 'data/恶性良性相似度.txt', 'data/良性目标恶性推荐.txt', 0.4)
+    main('data.mat', 'data/.txt', 'data/.txt', 0.6)
+    main('data.mat', 'data/.txt', 'data/.txt', 0.4)
 
-    main('data/良性权限矩阵.mat', 'data/良性恶性相似度.txt', 'data/恶性目标良性推荐.txt', 0.6)
-    main('data/恶性权限矩阵.mat', 'data/恶性恶性相似度.txt', 'data/恶性目标恶性推荐.txt', 0.4)
+    main('data/.mat', 'data/.txt', 'data/.txt', 0.6)
+    main('data/.mat', 'data.txt', 'data/.txt', 0.4)
