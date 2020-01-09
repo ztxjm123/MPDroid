@@ -16,3 +16,4 @@ File path:MPDroid\Data
 3.Debug and install the Python libraries you need in your code
 # Run
 We call all the steps and functions in MPDroid\AppRiskEvaluation\MinPermissionRecognition\main.py,so you just run it.
+You can run our code in a development environment such as Pycharm
