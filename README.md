@@ -14,8 +14,11 @@ The tool includes 4 principal modules, which are described as follows:
 4) MinPermissionIdentification: Based on the final description-minimum permission set obtained in module 2), MPDroid identifies the minimum permission of the test app, and further calculates the risk permission, risk value, etc. of the test app based on the algorithm of module 3) .
 # Prerequisites
 1.Import the MPDroid\Data\analyzedata.sql into your local MySQL.
+
 2.Change the database password in MPDroid\MinPermissionIdentification\common.py(sql_password=local mysql password''). MPDroid need a password to connect to your database.
+
 3.Install and debug the Python libraries which you need in your code.
 # Run
 cmd cd D:\MPDroid\MinPermissionIdentification ->
+
 D:\MPDroid\MinPermissionIdentification >python main.py
