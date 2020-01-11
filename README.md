@@ -15,5 +15,6 @@ File path:MPDroid\Data
 
 3.Debug and install the Python libraries you need in your code
 # Run
-D:MPDroid\AppRiskEvaluation\MinPermissionRecognition>python main.py
-
+cmd
+cd D:\MPDroid\AppRiskEvaluation\MinPermissionRecognition
+D:\MPDroid\AppRiskEvaluation\MinPermissionRecognition>python main.py
