@@ -5,6 +5,7 @@ based on description minimum permission set identiﬁcation.
 1)data
 The data set involved in the MPDroid is in the data folder, including malicious app set, benign app set etc.
 File path:MPDroid\Data
+
 2)Principal code modules 
 The tool includes 4 principal modules, which are described as follows:
 1) Over-declared Permission Identification: It mainly identifies the over-declared permissions in the app, and it includes the benign and malicious app data sets etc involved in the paper. The output of this module is the initial description-minimum permission set.
