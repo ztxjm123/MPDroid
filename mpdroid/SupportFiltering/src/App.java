@@ -9,12 +9,9 @@ import java.util.*;
  * @Version 1.0
  **/
 public class App {
-//    app属于这个topic的概率
     HashMap<Topic, Double> topicPro = new HashMap<>();
-    //权限列表
     List<Integer> privilegeList= new ArrayList<>();
 
-    //权限支持的概率
     HashMap<Integer, Double> priid_pro = new HashMap<>();
     int id;
     App(int id)
