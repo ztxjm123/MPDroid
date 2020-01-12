@@ -24,7 +24,7 @@ def operation_file(TOPIC_NUM, limit, target):
     inPath = 'Data_Origin/' + target + 'Target/' + str(TOPIC_NUM) + 'topic_data_output'
     print(inPath)
 
-    # 1、计算对比数量数据条数
+
     size = target.split('-')
     print(size[0], size[1])
     # 524 * (size / 100); 16343 / size
@@ -36,7 +36,7 @@ def operation_file(TOPIC_NUM, limit, target):
     s_more = 16343 - s_less
     print(s_less, s_more)
 
-    # 读取文档
+
     m_permission_path = 'Data_Origin/Malicious-permission-file.txt'
     s_permission_path = 'Data_Origin/Benign-permission-file.txt'
 

@@ -20,7 +20,7 @@ PERMISSIONS = os.path.join('Data_Origin', 'permissions.json')
 PERMISSIONS_LIST = json.load(open(PERMISSIONS, 'r'))
 NUM_PERMISSIONS = len(PERMISSIONS_LIST)  # the number of permissions set
 
-LIMIT = 0.4  # 不使用 kNN 使用阈值
+LIMIT = 0.4
 
 
 def getkNNs(rank_list, limit):

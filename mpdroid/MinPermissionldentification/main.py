@@ -113,7 +113,7 @@ def getRecommend(outPath):
 def getTrainAndTargetPermissionFromDb(appids):
     """
     To get permission data from the database, it is important to pay attention to what is the updated data.
-    :param 良性测试appid:
+    :param appid:
     :return:
     """
 
@@ -198,7 +198,7 @@ def create_result(limit, target, topic_NUM):
 
 def getData():
     # topic_num_list = [60, 65, 70, 75, 80, 85, 90, 95, 100]
-    # topic_num_list = [100 ]
+    # # topic_num_list = [100 ]
     # target_list = ['20-80']
     # limit_list = [0.1]
     # for target in target_list:
@@ -206,7 +206,7 @@ def getData():
     #        for limit in limit_list:
     #            create_result(limit, target, topic_NUM)
     # matplot.getResult(topic_num_list, 'Topic Number', topic_num_list, target_list, limit_list,
-    #                  'C:/Users/wzp12/Desktop/data', 'topic_num', topic_num_list)
+    #                  'C:', 'topic_num', topic_num_list)
 
     # topic_num_list = [100]
     # target_list = ['20-80']
@@ -237,8 +237,7 @@ def getData():
          for topic_NUM in topic_num_list:
              for limit in limit_list:
                  create_result(limit, target, topic_NUM)
-    # matplot.getResult(topic_num_list, 'Topic Number', topic_num_list, target_list, limit_list,
-    #                    'D:', 'topic_num', topic_num_list)
+
 
 if __name__ == '__main__':
     getData()

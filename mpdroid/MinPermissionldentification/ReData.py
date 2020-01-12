@@ -63,7 +63,7 @@ def main(TOPIC_NUM, limit, target):
             common.mkdir(newPath)
 
             # Divide the topic file and the permission file into 5 parts and take one of them in a loop. The permission file USES the database for easy modification
-            # 获取到Appid
+            # Appid
             Benign_testing_topic, Benign_training_topic, Benign_testing_appid, Benign_training_appid = getTrainAndTarget(inPath + '/Benign topic four-fifths.txt', index)
             Benign_testing_permission = getTrainAndTargetPermissionFromDb(Benign_testing_appid)
             Benign_training_permission = getTrainAndTargetPermissionFromDb(Benign_training_appid)
@@ -235,7 +235,6 @@ def getTrainAndTarget(filePath, popIndex):
         if (i != popIndex):
             four_fifths = four_fifths + Overall_data[i]
 
-    # 返回下标
     one_fifthsxb = []
     four_fifthsxb = []
     for item in four_fifths:
@@ -316,10 +315,6 @@ if __name__ == '__main__':
     # ， 100 80 60
     # TOPIC_NUM = 100
     # limit = 0.1
-
-    # 1、话题		65、75、85、95
-    # 2、测试集比例 	15-85 / 25-75 / 35-65 / 40-60
-    # 3、阈值		0.01/0.5/0.6
 
     # TOPIC_NUM = 65
     # TOPIC_NUM = 75
