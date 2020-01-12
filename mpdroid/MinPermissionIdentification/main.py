@@ -189,7 +189,7 @@ def create_result(limit, target, topic_NUM):
     sfMethod(topic_NUM, limit, target)
     minpMethod(topic_NUM, limit, target)
     # The calculation is written to the database
-    cmd = "java -Dfile.encoding=utf-8 -jar mappro2.0.jar %s %s %s %s %s %s" % (topic_NUM, target, limit, './Data_Output', './permission.json', config.sql_password)
+    cmd = "java -Dfile.encoding=utf-8 -jar RiskCalculation.jar %s %s %s %s %s %s" % (topic_NUM, target, limit, './Data_Output', './permission.json', config.sql_password)
     print(cmd)
     os.system(cmd)
     print('=====================================================================================')
