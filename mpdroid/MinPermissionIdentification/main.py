@@ -182,7 +182,7 @@ def create_result(limit, target, topic_NUM):
     if not (os.path.exists(topicPath)):
         # Create a topic file
         print(topicPath, "Need to create a file")
-        cmd = "java -Dfile.encoding=utf-8 -jar topicNumGet.jar %s ./data ./Data_Origin/%sTarget" % (topic_NUM, target)
+        cmd = "java -Dfile.encoding=utf-8 -jar Over_declared_Per_Identify.jar %s ./data ./Data_Origin/%sTarget" % (topic_NUM, target)
         print(cmd)
         os.system(cmd)
     sqlPath = ReData.main(topic_NUM, limit, target)
