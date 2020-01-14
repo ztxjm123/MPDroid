@@ -8,7 +8,7 @@ File path:MPDroid\Data
 
 2)Principal code modules 
 The tool includes 4 principal modules, which are described as follows:
-1) Over-declared Permission Identification(corresponds to topicNumGet.jar): It mainly identifies the over-declared permissions in the app, and it includes the benign and malicious app data sets etc involved in the paper. The output of this module is the initial description-minimum permission set.
+1) Over-declared Permission Identification(corresponds to Over_declared_Per_Identify.jar.jar): It mainly identifies the over-declared permissions in the app, and it includes the benign and malicious app data sets etc involved in the paper. The output of this module is the initial description-minimum permission set.
 2) Support-Filtering(corresponds to SupportFiltering.jar): On the basis of module 1), MPDroid filters the low-support permissions in the app based on the functionality point-permission set identification. The output of this module is the final description-minimum permission set.
 3) Risk Calculation(corresponds to RiskCalculation.jar):An algorithm for calculating the app risk. The output is the risk value of app.
 4) MinPermissionIdentification: Based on the final description-minimum permission set obtained in module 2), MPDroid identifies the minimum permission of the test app, and further calculates the risk permission, risk value, etc. of the test app based on the algorithm of module 3) .
