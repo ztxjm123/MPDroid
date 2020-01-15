@@ -83,8 +83,8 @@ def main(TOPIC_NUM, limit, target):
             permission.mainInList(Malicious_training_permission, newPath + '/Training_malicious_permission_matrix.mat', False)
 
 
-            similar.main(newPath + '/Testing_benign_topic_matrix.mat'
-                         , newPath + '/Training_benign_topic_matrix.mat'
+            similar.main(newPath + '/Training_benign_topic_matrix.mat'
+                         , newPath + '/Testing_benign_topic_matrix.mat'
                          , newPath + '/Similarity-training_benign.txt'
                          , TOPIC_NUM)
 
