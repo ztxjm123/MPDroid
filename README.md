@@ -19,7 +19,9 @@ The tool includes 4 principal modules, which are described as follows:
 
 3.Install and debug the Python libraries which you need in your code.
 
-4.If you want to evaluate the new app data, first replace the first 20% of the mpdroid\ MinPermissionIdentification\ data\ topic_test.txt file with the new app data, and then import the corresponding app data into the normal_test_permission table of the database
+4.In mpdroid\MinPermissionIdentification\ReData.py we back up the database. This requires configuring the environment variables, which means matching mysqldump to the path
+
+5.If you want to evaluate the new app data, first replace the first 20% of the mpdroid\ MinPermissionIdentification\ data\ topic_test.txt file with the new app data, and then import the corresponding app data into the normal_test_permission table of the database
 # Run
 cmd cd D:\MPDroid\MinPermissionIdentification ->
 
