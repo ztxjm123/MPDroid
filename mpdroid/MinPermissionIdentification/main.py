@@ -185,9 +185,9 @@ def create_result(limit, target, topic_NUM):
         cmd = "java -Dfile.encoding=utf-8 -jar Over_declared_Per_Identify.jar %s ./data ./Data_Origin/%sTarget" % (topic_NUM, target)
         print(cmd)
         os.system(cmd)
-    # sqlPath = ReData.main(topic_NUM, limit, target)
-    # sfMethod(topic_NUM, limit, target)
-    # minpMethod(topic_NUM, limit, target)
+    sqlPath = ReData.main(topic_NUM, limit, target)
+    sfMethod(topic_NUM, limit, target)
+    minpMethod(topic_NUM, limit, target)
     # The calculation is written to the database
     cmd = "java -Dfile.encoding=utf-8 -jar RiskCalculation.jar %s %s %s %s %s %s" % (topic_NUM, target, limit, './Data_Output', './permission.json', config.sql_password)
     print(cmd)
