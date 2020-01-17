@@ -185,9 +185,9 @@ def create_result(limit, target, topic_NUM):
         cmd = "java -Dfile.encoding=utf-8 -jar Over_declared_Per_Identify.jar %s ./data ./Data_Origin/%sTarget" % (topic_NUM, target)
         print(cmd)
         os.system(cmd)
-    sqlPath = ReData.main(topic_NUM, limit, target)
-    sfMethod(topic_NUM, limit, target)
-    minpMethod(topic_NUM, limit, target)
+    # sqlPath = ReData.main(topic_NUM, limit, target)
+    # sfMethod(topic_NUM, limit, target)
+    # minpMethod(topic_NUM, limit, target)
     # The calculation is written to the database
     cmd = "java -Dfile.encoding=utf-8 -jar RiskCalculation.jar %s %s %s %s %s %s" % (topic_NUM, target, limit, './Data_Output', './permission.json', config.sql_password)
     print(cmd)
@@ -216,7 +216,7 @@ def getData():
     #         for limit in limit_list:
     #             create_result(limit, target, topic_NUM)
     # matplot.getResult(limit_list, 'Support Degree Threshold', topic_num_list, target_list, limit_list,
-    #                   'C:/Users/wzp12/Desktop/data', 'threshold', limit_list)
+    #                   'C:', 'threshold', limit_list)
 
     # topic_num_list = [100]
     # target_list = ['10-90', '15-85', '20-80', '25-75']  # ,'30-60','35-65', '40-60'
@@ -227,7 +227,7 @@ def getData():
     #             create_result(limit, target, topic_NUM)
     # ta = [re.sub(r"-.{2}", '', x) for x in target_list]
     # matplot.getResult(ta, 'Test Set Ratio', topic_num_list, target_list, limit_list,
-    #                  'D:', 'test_proportion', target_list)
+    #                  'C:', 'test_proportion', target_list)
 
 
     topic_num_list = [100]
