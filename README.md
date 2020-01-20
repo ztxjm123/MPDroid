@@ -8,10 +8,11 @@ File path:MPDroid\Data
 
 2)Principal code modules 
 The tool includes 4 principal modules, which are described as follows:
-1) Over-declared Permission Identification(corresponds to Over_declared_Per_Identify.jar.jar): It mainly identifies the over-declared permissions in the app, and it includes the benign and malicious app data sets etc involved in the paper. The output of this module is the initial description-minimum permission set.
-2) Support-Filtering(corresponds to SupportFiltering.jar): On the basis of module 1), MPDroid filters the low-support permissions in the app based on the functionality point-permission set identification. The output of this module is the final description-minimum permission set.
-3) Risk Calculation(corresponds to RiskCalculation.jar):An algorithm for calculating the app risk. The output is the risk value of app.
-4) MinPermissionIdentification: Based on the final description-minimum permission set obtained in module 2), MPDroid identifies the minimum permission of the test app, and further calculates the risk permission, risk value, etc. of the test app based on the algorithm of module 3) .
+1.	Over-declared Permission Identification (Over_declared_Per_Identify.jar). This module identifies the over-declared permissions of an app, and includes the benign and malicious app data sets involved in the paper. Its output is the initial description-minimum permission set.
+2.	Support-Filtering (SupportFiltering.jar). This module filters the low-support permissions in the app. Its output is the final description-minimum permission set.
+3.	Risk Calculation (RiskCalculation.jar). This module calculates the app risk. Its output is the risky permissions and risk values.
+4.	MinPermissionIdentification (main module). This module identifies the minimum permission of the app, and further identifies the risk permissions and calculate risk values.
+
 # Prerequisites
 1.Import the MPDroid\Data\analyzedata.sql into your local MySQL.
 
